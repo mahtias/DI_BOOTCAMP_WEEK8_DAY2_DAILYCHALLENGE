@@ -50,4 +50,3 @@ FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NO
 
 --R4: L'instruction SELECT COUNT(*) FROM FirstTab AS ft WHERE ft.id NOT IN (SELECT id FROM SecondTab WHERE id IS NOT NULL) renvoie le nombre de lignes de la table "FirstTab" où la valeur de la colonne "id" n'existe pas dans la table "SecondTab" où la colonne "id" n'est pas NULL.
 	
-	
